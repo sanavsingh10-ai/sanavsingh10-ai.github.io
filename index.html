@@ -17,6 +17,10 @@
     ul { margin: 8px 0 0 18px; }
     img { max-width: 100%; border-radius: 12px; display:block; margin: 10px auto; }
     footer { margin-top: 24px; font-size:.9rem; color: var(--muted); text-align:center; }
+    /* Responsive video */
+    .video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:12px; }
+    .video iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+    .btnlink { display:inline-block; margin-top:8px; padding:8px 12px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; }
   </style>
 </head>
 <body>
@@ -25,10 +29,22 @@
       <div aria-hidden="true" style="font-size:42px">⭐</div>
       <h1>Hi, I’m <strong>Sanav Singh</strong>!</h1>
       <div class="tag">Age 10</div>
-      <!-- Tip: replace the image source below with a real photo or drawing; keep alt text -->
-
       <p style="margin-top:8px">Welcome to my little corner of the web.</p>
     </header>
+
+    <section class="card">
+      <h2>Football Video</h2>
+      <p>Here’s me at the football ground:</p>
+      <div class="video">
+        <iframe
+          src="https://drive.google.com/file/d/1LKy2OBE0PZRn_5OdP0Pu4Syc0ugg0uph/preview"
+          allow="autoplay"
+          loading="lazy"
+          title="Sanav at the football ground">
+        </iframe>
+      </div>
+      <a class="btnlink" href="https://drive.google.com/file/d/1LKy2OBE0PZRn_5OdP0Pu4Syc0ugg0uph/view?usp=sharing" target="_blank" rel="noopener">Open in a new tab</a>
+    </section>
 
     <section class="card">
       <h2>My Favorite Things</h2>
@@ -38,7 +54,6 @@
         <li>⚽ Playing outdoor games</li>
         <li>💻 Making small games in Scratch</li>
       </ul>
-      <!-- Edit the list above with Sanav's real favorites -->
     </section>
 
     <section class="card">
@@ -53,7 +68,6 @@
     <section class="card">
       <h2>Mini Projects</h2>
       <p>Coming soon! I’ll add links to my drawings, stories, and Scratch projects here.</p>
-      <!-- If you add links later, use target="_blank" rel="noopener" for safety -->
     </section>
 
     <footer>
@@ -62,7 +76,6 @@
   </div>
 
   <script>
-    // Auto-update year
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
