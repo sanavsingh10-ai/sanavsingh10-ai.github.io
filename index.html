@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sanav Singh</title>
+  <style>
+    :root { --bg:#fff; --fg:#111; --accent:#3b82f6; --muted:#555; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--fg); background: var(--bg); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px; }
+    header { text-align: center; margin-bottom: 24px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    .tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--accent); color:#fff; font-weight:600; font-size:.9rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin: 16px 0; }
+    h2 { font-size: 1.2rem; margin: 0 0 8px; }
+    ul { margin: 8px 0 0 18px; }
+    img { max-width: 100%; border-radius: 12px; display:block; margin: 10px auto; }
+    footer { margin-top: 24px; font-size:.9rem; color: var(--muted); text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div aria-hidden="true" style="font-size:42px">⭐</div>
+      <h1>Hi, I’m <strong>Sanav Singh</strong>!</h1>
+      <div class="tag">Age 10</div>
+      <!-- Tip: replace the image source below with a real photo or drawing; keep alt text -->
+
+      <p style="margin-top:8px">Welcome to my little corner of the web.</p>
+    </header>
+
+    <section class="card">
+      <h2>My Favorite Things</h2>
+      <ul>
+        <li>🚀 Space stuff (rockets, planets, stars)</li>
+        <li>🧩 Puzzles and brain teasers</li>
+        <li>⚽ Playing outdoor games</li>
+        <li>💻 Making small games in Scratch</li>
+      </ul>
+      <!-- Edit the list above with Sanav's real favorites -->
+    </section>
+
+    <section class="card">
+      <h2>What I’m Learning</h2>
+      <ul>
+        <li>Basics of coding (loops, if/else, variables)</li>
+        <li>Cool science experiments at home</li>
+        <li>Drawing cartoon characters</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Mini Projects</h2>
+      <p>Coming soon! I’ll add links to my drawings, stories, and Scratch projects here.</p>
+      <!-- If you add links later, use target="_blank" rel="noopener" for safety -->
+    </section>
+
+    <footer>
+      <p>No cookies. No tracking. Just fun. © <span id="y"></span> Sanav Singh</p>
+    </footer>
+  </div>
+
+  <script>
+    // Auto-update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
